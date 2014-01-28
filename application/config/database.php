@@ -48,8 +48,8 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'k0nqtq8vl2.database.windows.net';
-$db['default']['username'] = 'meilindb';
+$db['default']['hostname'] = 'http://k0nqtq8vl2.database.windows.net';
+$db['default']['username'] = 'meilindb@k0nqtq8vl2';
 $db['default']['password'] = 'nokia3310A';
 $db['default']['database'] = 'meilincAVperF1MZ';
 $db['default']['dbdriver'] = 'mysql';

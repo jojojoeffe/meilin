@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'http://k0nqtq8vl2.database.windows.net';
-$db['default']['username'] = 'meilindb@k0nqtq8vl2';
-$db['default']['password'] = 'nokia3310A';
-$db['default']['database'] = 'meilincAVperF1MZ';
-$db['default']['dbdriver'] = 'sqlsrv';
+$db['default']['hostname'] = 'us-cdbr-azure-west-b.cleardb.com';
+$db['default']['username'] = 'bf546d233b11f0';
+$db['default']['password'] = '2c9866b0';
+$db['default']['database'] = 'meilindbmysql';
+$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

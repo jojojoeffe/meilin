@@ -1,0 +1,27 @@
+/* Common Part
+ *******************************************/
+
+/* header
+ *******************************************/
+
+/* Content
+ *******************************************/
+.modal-login{
+	margin-left: -160px;
+	width: 320px;
+}
+
+.modal-login .modal-header{
+	background: url('../img/logo.png') no-repeat;
+	background-position: 90% 30%; 
+	background-size:30%;
+}
+.main-header{
+	margin: 10px 0;
+}
+footer{
+	padding: 10px;
+	color: #999;
+}
+/* Footer
+ *******************************************/

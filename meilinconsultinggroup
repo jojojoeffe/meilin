@@ -1,0 +1,143 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 03, 2014 at 09:28 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `meilinconsultinggroup`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registrations`
+--
+
+CREATE TABLE IF NOT EXISTS `registrations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `email_address` varchar(45) NOT NULL,
+  `office_address` varchar(100) NOT NULL,
+  `phone_number` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `registrations`
+--
+
+INSERT INTO `registrations` (`id`, `name`, `email_address`, `office_address`, `phone_number`) VALUES
+(1, 'a', 'aldhi@ui.ac.id', 'Depok', '123456'),
+(2, 'Frank', 'frank@ui.ac.id', 'JKT', '2345'),
+(3, 'Aldhi Mirza Tampan', 'aldhi.mirza@ui.ac.id', 'Probolinggo', '121'),
+(4, 'Aldhi Mirza Tampan', 'aldhi.mirza@ui.ac.id', 'Probolinggo', '121'),
+(5, 'Aldhi Mirza Tampan', 'aldhi.mirza@ui.ac.id', 'Probolinggo', '121');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `services`
+--
+
+CREATE TABLE IF NOT EXISTS `services` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `consulting_field` varchar(45) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `consulting_field`, `description`, `image`) VALUES
+(3, 'Education Consultant', 'Bergabunglah bersama kami.Kami jamin anak anda minimal menjadi progrmammer.', 'education_consultants_canada_educational_services.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slider_images`
+--
+
+CREATE TABLE IF NOT EXISTS `slider_images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `image` varchar(255) NOT NULL,
+  `caption` varchar(45) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `slider_images`
+--
+
+INSERT INTO `slider_images` (`id`, `image`, `caption`, `name`) VALUES
+(1, 'jaket.jpg', 'jaket', 'Test Image 2'),
+(2, 'banner01.jpg', 'Scenery', 'Test Image 2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teams`
+--
+
+CREATE TABLE IF NOT EXISTS `teams` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `division` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `facebook` varchar(45) NOT NULL,
+  `twitter` varchar(45) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `teams`
+--
+
+INSERT INTO `teams` (`id`, `name`, `division`, `email`, `facebook`, `twitter`, `image`) VALUES
+(3, 'Aldhi ganteng beutzzzz', '222', 'aldhi@ui.ac.id', 'aldhi mirza', '@aldhi', 'product-2-small.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `name` varchar(45) DEFAULT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  `password_confirmation` varchar(32) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `create_at` datetime DEFAULT NULL,
+  `update_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`name`, `id`, `username`, `password`, `password_confirmation`, `email`, `create_at`, `update_at`) VALUES
+('Aldhi Mirza Tampan Banget', 1, 'aldhimirza', 'Aldhi922412', '', 'aldhi@umas.edu', NULL, NULL);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

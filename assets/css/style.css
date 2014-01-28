@@ -1,0 +1,373 @@
+/*universal selector*/
+* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+/* Common Part
+ *******************************************/
+body{
+	font-family: open sans;
+}
+body a{
+	color:black;
+}
+/* header
+ *******************************************/
+header{
+	background:#2CA8CC;
+	border-top: solid 15px black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.main_nav ul{
+	margin-top:45px;
+	margin-bottom:0px;
+	text-align: center;
+}
+
+.main_nav li{
+	display: inline-block;
+}		
+
+.main_nav a{
+	color:white;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	display: inline-block;
+	font-size: 20px;
+	transition:background 2s;
+	-webkit-transition:background 2s;
+}
+
+.main_nav a:hover{
+
+	text-decoration: none;
+	background: black;
+}
+
+.logo{
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 300px;
+	height:70px;
+}
+
+/* Content
+ *******************************************/
+.content{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	color: black;
+	background : url('../img/white_wall_hash.png');
+
+}
+.border{
+	background: white;
+	border: solid 1px #E3E4E8;
+	padding:30px;
+	margin-bottom: 10px;
+}
+span.ready{
+	color: #ADD248;
+	font-weight: bold;
+}
+
+.company-header{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.company-header>img{
+	border: solid 3px red;
+}
+
+h4{
+	font-size:35px;
+}
+
+.location h4{
+padding-top:10px;
+}
+
+.company-page h4{
+	padding-top:10px;
+}
+
+h4.index{
+	font-size: 25px;/*
+	margin-bottom: 2em;
+	border-bottom: solid 1px #E3E4E8;*/
+}
+span.dot{
+	margin: 0;
+	padding:0;
+	font-family: times-new-roman;
+	font-size: 50px;
+	color: #2CA8CC;
+}
+
+h5{
+	color:#79CCDC;
+	font-size: 15px;
+	font-family : Tahoma;
+}
+.category{
+	height: 260px;
+}
+.foto{
+	border:solid 1px grey;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+}
+.jabatan{
+	color:#C7C7C7;
+	font-style:oblique;
+}
+.comenters{
+	color:#79CCDC;
+	font-weight: bold;
+}
+a:hover{
+	text-decoration:none;
+}
+
+#status{
+	padding: 5px;
+	margin-left: 10px;
+	font-size: 15px;
+	background: green;
+	border-radius: 5px;
+}
+.sosmed{
+	padding-top: 10px;
+}
+#produk_pilihan{
+	padding-top: 20px;
+}
+
+.description{
+	text-align: center;
+}
+
+.isi{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.sign{
+	text-align: right;
+}
+.cart_line{
+	height: 20px;
+	border-bottom: solid 1px black;
+}
+#harga_detail{
+	font-size: 30px;
+}
+#map{
+	width: 100%;
+	height:250px;
+	border: solid 1px black;
+}
+.popup{
+	text-align: left;
+	color: black;
+}
+
+
+/* Footer
+ *******************************************/
+footer{
+	background: #2591b0;
+	color: white;
+	padding: 20px;
+    border-bottom:solid 15px black;
+}
+
+
+div.company-page{
+	margin-left: 2em;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+/*font face*/
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), url(http://themes.googleusercontent.com/static/fonts/lora/v5/5-AYViExptypIdFoLKAxTA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+.category{
+	width: 240px;
+	height:75px;
+	border: solid 1px black;
+	margin-bottom: 15px;
+}
+.category-title-container{
+    background: url(../img/ribbon.png);
+    height: 70px;   
+    width:283px;
+    margin-left:-46px;
+    padding-top: 1px;
+    padding-left: 25px;
+}
+.category-title-container h5{
+	color:white;
+}
+
+/*new*/
+.sosmed{
+	margin-left: 2em;
+}
+.sosmed ul{
+	margin: 0px;
+}
+
+.sosmed li{
+	display: inline-block;
+	margin: 0px;
+}		
+
+.sosmed a{
+	color:white;
+	padding-top: 2em;
+	display: inline-block;
+}
+
+.testimoni{
+	color:black;
+	padding: 3em;
+}
+
+img{
+	width:100%;
+	height:100%;
+}
+
+
+/*icomoon*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-location, .icon-phone, .icon-mail, .icon-facebook, .icon-twitter, .icon-google-plus, .icon-left-quote, .icon-right-quote {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-location:before {
+	content: "\e000";
+}
+.icon-phone:before {
+	content: "\e001";
+}
+.icon-mail:before {
+	content: "\e002";
+}
+.icon-facebook:before {
+	content: "\e003";
+}
+.icon-twitter:before {
+	content: "\e004";
+}
+.icon-google-plus:before {
+	content: "\e005";
+}
+.icon-left-quote:before {
+	content: "\e006";
+}
+.icon-right-quote:before {
+	content: "\e007";
+}
+
+.fs1{
+	font-size: 2em;
+}
+.fs2{
+	font-size: 1em;
+}
+.footer-info{
+	font-size: 10px;
+}
+
+.profile-team{
+	background: #313538;
+	color:white;
+	height:100px;
+	font-size: 15px;
+}
+.profile-team span{
+	font-size: 10px;
+}
+.profile-team p{
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.contact-team{
+	background: #C7C9CA;
+	height:100px;
+	padding-top: 40px;
+	padding-left: 15px;
+	font-size: 10px;
+}
+
+.team-desc{
+	margin-top:20px;
+}
+
+.foto-team{
+	width:100px;
+	height:100px;
+}
+.foto-team img{
+	height:100%;
+	width:100%;
+}

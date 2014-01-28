@@ -41,5 +41,6 @@
 			<?php endforeach; ?>
 			
 		</table>
-
+                 
+                <?php echo admin_pagination(new Team);?>
 	</div>

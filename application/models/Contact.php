@@ -8,9 +8,10 @@ class Contact extends ActiveRecord\Model {
         array('region'),
         array('country'),
         array('province'),
-        array('tel-local'),
+        array('tel_local'),
+        array('tel_inter'),
         array('fax'),
-        array('whatsap-line')
+        array('whatsap_line')
     );
     
     static $validates_format_of = array(

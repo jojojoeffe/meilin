@@ -17,8 +17,10 @@
                                 <div class="row">
                                     <div class="sosmed">
                                         <ul>
-                                            <li><a href="#"><img src='<?php echo base_url('assets/img/') . '/ico-twitter.png' ?>'></a></li>
-                                            <li><a href="#"><img src='<?php echo base_url('assets/img/') . '/ico-facebook.png' ?>'></a></li>
+                                            <?php foreach ($contacts as $contact): ?>
+                                            <li><a href="<?php echo 'https://www.twitter.com/' . $contact->twitter; ?>"><img src='<?php echo base_url('assets/img/') . '/ico-twitter.png' ?>'></a></li>
+                                            <li><a href="<?php echo 'https://www.facebook.com/' . $contact->facebook; ?>"><img src='<?php echo base_url('assets/img/') . '/ico-facebook.png' ?>'></a></li>
+                                            <?php endforeach; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -43,7 +45,5 @@
             </div>
 
         </div>
-
-
     </div>
 </div>

@@ -56,7 +56,7 @@
 		}
 
 
-		static $per_page = 100;
+		static $per_page = 3;
 
 		public function page($page_number){
 			return Team::find('all', array('offset' => ($page_number - 1),

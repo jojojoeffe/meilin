@@ -19,7 +19,7 @@
         <div class="control-group">
           <label class="control-label">Region :</label>
           <div class="controls">
-              <input name='contact[Region]' value='<?php echo $contact->region ?>'  type="text" >
+              <input name='contact[region]' value='<?php echo $contact->region ?>'  type="text" >
               <div class="text-error"><?php if($contact->errors) echo $contact->errors->on('region') ?></div>
           </div>
         </div>
@@ -35,7 +35,7 @@
          <div class="control-group">
           <label class="control-label">Country:</label>
           <div class="controls">
-              <input name='contact[country]' value='<?php echo $contact->title ?>'  type="text" >
+              <input name='contact[country]' value='<?php echo $contact->country ?>'  type="text" >
               <div class="text-error"><?php if($contact->errors) echo $contact->errors->on('country') ?></div>
           </div>
         </div>
@@ -78,8 +78,20 @@
               <div class="text-error"><?php if($contact->errors) echo $contact->errors->on('whatsap_line') ?></div>
           </div>
         </div>
-        
-        
+        <div class="control-group">
+             <label class="control-label">Facebook:</label>
+          <div class="controls">
+              <input name='contact[facebook]' value='<?php echo $contact->facebook  ?>' type="text" >
+              <div class="text-error"><?php if($contact->errors) echo $contact->errors->on('facebook') ?></div>
+          </div>
+        </div>
+        <div class="control-group">
+             <label class="control-label">Twitter:</label>
+          <div class="controls">
+              <input name='contact[twitter]' value='<?php echo $contact->twitter  ?>' type="text" >
+              <div class="text-error"><?php if($contact->errors) echo $contact->errors->on('twitter') ?></div>
+          </div>
+        </div>
 
         <div class="control-group">
           <div class="controls pull-right">

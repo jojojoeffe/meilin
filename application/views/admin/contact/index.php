@@ -33,6 +33,8 @@
                   <td><?php echo $contact->tel_inter; ?></td>
                   <td><?php echo $contact->fax; ?></td>
                   <td><?php echo $contact->whatsap_line; ?></td>
+                  <td><?php echo $contact->facebook; ?></td>
+                  <td><?php echo $contact->twitter; ?></td>
                 <td ><a href='<?php echo site_url('admin/contacts/edit/' . $contact->id); ?>' class="btn">Edit</a>
 
                 </td>

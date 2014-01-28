@@ -35,3 +35,5 @@
 
     </table>
 </div>
+
+<?php echo admin_pagination(new Service);?>

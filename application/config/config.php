@@ -19,7 +19,7 @@
 * Untuk memanggil file file yang ada di asset
 * sehingga tidak perlu menuliskan berulang kali
 */
-$config['base_url']	= 'http://localhost/meilinconsulting/';
+$config['base_url']	= 'http://meilinconsultinggroup.azurewebsites.net/';
 
 /*
 |--------------------------------------------------------------------------

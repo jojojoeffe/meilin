@@ -19,7 +19,7 @@ class Events extends CI_Controller {
     function add() {
         $this->data['event'] = new Event();
         $this->data['form_action'] = site_url('admin/events/create');
-        $this->data['form_title'] = 'Add Event';
+        $this->data['form_title'] = 'Add New Event';
         $this->data['body'] = 'admin/event/add';
         $this->data['action'] = 'Add ';
         $this->load->view('admin/application', $this->data);
@@ -30,7 +30,7 @@ class Events extends CI_Controller {
         $this->data['body'] = 'admin/event/edit';
         $this->data['action'] = 'Edit ';
         $this->data['form_action'] = site_url('admin/events/update/' . $this->data['event']->id);
-        $this->data['form_title'] = 'Edit ' . $this->data['event']->name;
+        $this->data['form_title'] = 'Edit ' . $this->data['event']->section;
         $this->load->view('admin/application', $this->data);
     }
 

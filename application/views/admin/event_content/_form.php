@@ -1,7 +1,7 @@
 <div class="container">
     <ul class="breadcrumb">
         <li><a href="#">Dashboard</a> <span class="divider">/</span></li>
-        <li class="active"><?php echo $action; ?>Company Content</li>
+        <li class="active"><?php echo $action; ?>Event Content</li>
     </ul>
     
     <h2><?php echo $form_title; ?></h2>
@@ -31,17 +31,10 @@
           </div>
         </div>
 
-        <div class="control-group">
-          <label class="control-label">Description 3:</label>
-          <div class="controls">
-             <textarea name='content[description_3]' type="text" ><?php echo $content->description_3?></textarea>
-             <div class="text-error"><?php if($content->errors) echo $content->errors->on('description_3') ?></div>
-          </div>
-        </div>
 
         <div class="control-group">
           <div class="controls pull-right">
-              <button href='<?php echo site_url('admin/company_contents') ?>' class="btn">Cancel</button>
+              <button href='<?php echo site_url('admin/event_contents') ?>' class="btn">Cancel</button>
               <button class="btn btn-success">Update</button>
           </div>
         </div>

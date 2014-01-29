@@ -12,7 +12,7 @@
                             <!-- start Basic Jquery Slider -->
                             <ul class="bjqs">
                                 <?php foreach ($slider_images as $slider_image): ?>
-                                <li><img src="<?php echo $slider_image->image_url() ?>" title="<?php echo $slider_image->caption ?>"></li>
+                                    <li><img src="<?php echo $slider_image->image_url() ?>" title="<?php echo $slider_image->caption ?>"></li>
                                 <?php endforeach; ?>
                             </ul>
                             <!-- end Basic jQuery Slider -->
@@ -40,15 +40,26 @@
                 <div class="row">   
                     <div class="span10">
                         <?php foreach ($contents as $content): ?>
-                        <h4 class="index"> <?php echo $content->title ?></h4><hr>
-                        <p>
-                           <?php echo $content->description ?>
-                        </p>
-                         <?php endforeach; ?> 
+                            <h4 class="index"> <?php echo $content->title ?></h4><hr>
+                            <p>
+                                <?php echo $content->description ?>
+                            </p>
+                        <?php endforeach; ?> 
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="span10">
+                        <a href='<?php echo site_url('events/index'); ?>' class="btn btn-success pull-right">
+                            Our Event
+                        </a>
+                    </div>
+                </div>
             </div>
+
+
+
+
+
         </div>
     </div>
 </div>

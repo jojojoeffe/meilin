@@ -23,9 +23,31 @@
                     <div class="navbar-inner">
                         <a class="brand" href="#">Meilin Consulting CMS</a> 
                         <ul class="nav pull-right">
-                            <li><a href="<?php echo site_url('admin/home_contents'); ?>">Home Desc</a></li>
-                            <li><a href="<?php echo site_url('admin/company_contents'); ?>">Company Desc</a></li>
-                             <li><a href="<?php echo site_url('admin/team_contents'); ?>">Team Desc</a></li>
+
+
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="dLabel" data-toggle="dropdown" data-target="#" href="#">Content Description 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="<?php echo site_url('admin/home_contents'); ?>">Home Desc</a></li>
+                                    <li><a href="<?php echo site_url('admin/company_contents'); ?>">Company Desc</a></li>
+                                    <li><a href="<?php echo site_url('admin/team_contents'); ?>">Team Desc</a></li>
+                                    <li><a href="<?php echo site_url('admin/event_contents'); ?>">Event Desc</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="dLabel" data-toggle="dropdown" data-target="#" href="#">Event 
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="<?php echo site_url('admin/part_events'); ?>">Part Event</a></li>
+                                    <li><a href="<?php echo site_url('admin/events'); ?>">Event</a></li>
+                                </ul>
+                            </li>
+
                             <li><a href="<?php echo site_url('admin/services'); ?>">Services</a></li>
                             <li><a href="<?php echo site_url('admin/teams'); ?>">Teams</a></li>
                             <li><a href="<?php echo site_url('admin/contacts'); ?>">Contacts</a></li>

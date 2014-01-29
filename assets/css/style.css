@@ -261,6 +261,16 @@ img{
 	height:100%;
 }
 
+.event-date{
+    color:blue;
+    font-size: 10px;
+}
+
+.event-section{
+    color:black;
+    font-size: 15px;
+}
+
 
 /*icomoon*/
 @font-face {

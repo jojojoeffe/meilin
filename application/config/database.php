@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'us-cdbr-azure-west-b.cleardb.com';
-$db['default']['username'] = 'bf546d233b11f0';
-$db['default']['password'] = '2c9866b0';
+$db['default']['hostname'] = 'ap-cdbr-azure-east-b.cloudapp.net';
+$db['default']['username'] = 'b29b173b6be155';
+$db['default']['password'] = '332560d0';
 $db['default']['database'] = 'meilindbmysql';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
